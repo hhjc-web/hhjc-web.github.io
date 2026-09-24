@@ -194,22 +194,22 @@ cv:
       - title: The Second Hong Kong SIAM Biennial Conference
         location: Hong Kong
         date: 2023-08-28
-        summary: Invited Speaker. Talk: "Solving Elliptic Problems with Singular Solutions Using Splitting Technique"
+        summary: "Invited Speaker. Talk: \"Solving Elliptic Problems with Singular Solutions Using Splitting Technique\""
 
       - title: SIAM Conference on Computational Science and Engineering (CSE 2025)
         location: Fort Worth, Texas, U.S.
         date: 2025-03-03
-        summary: Invited Speaker. Talk: "Identifying Point Sources in Elliptic Problems using Deep Neural Networks"
+        summary: "Invited Speaker. Talk: \"Identifying Point Sources in Elliptic Problems using Deep Neural Networks\""
 
       - title: The 14th Annual Conference on Inverse Problems, Imaging, and Applications
         location: Tianjin, China
         date: 2025-04-18
-        summary: Invited Speaker. Talk: "Point Source Identification using Singularity Enriched Neural Networks"
+        summary: "Invited Speaker. Talk: \"Point Source Identification using Singularity Enriched Neural Networks\""
 
       - title: The 15th AIMS Conference
         location: Athens, Greece
         date: 2026-07-06
-        summary: Invited Speaker. Talk: "Dual variational neural network for the p-Laplace problem"
+        summary: "Invited Speaker. Talk: \"Dual variational neural network for the p-Laplace problem\""
 
     Research Visits:
       - company: Center for Computational Mathematics, Flatiron Institute
