@@ -1,8 +1,9 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
-inline: true
+title: Selected as CAST Youth Talent Cultivation Project (PhD Special Program)
+date: 2026-01-01
+inline: false
 related_posts: false
 ---
 
-A simple inline announcement.
+Tianhao Hu has been selected for the **CAST Youth Talent Cultivation Project – PhD Special Program** by the China Association for Science and Technology (CAST), recognizing outstanding young researchers in science and technology.

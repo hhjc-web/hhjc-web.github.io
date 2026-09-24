@@ -1,189 +1,238 @@
 cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  name: Tianhao Hu
+  label: Ph.D. Student in Mathematics
+  email: thhu@link.cuhk.edu.hk
+  location: Hong Kong
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: Ph.D. student in the Department of Mathematics at The Chinese University of Hong Kong. Research interests include Numerical PDE, Machine Learning, Inverse Problems, and Scientific Computing.
 
   social_networks:
-    - network: X
-      username: AlbertEinstein
     - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+      username: hhjc-web
+    - network: Google Scholar
+      username: D7NWc1QAAAAJ
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+    street: Room 222A, Lady Shaw Building
+    city: Shatin, New Territories
+    region: Hong Kong
+    postalCode: ""
+    countryCode: HK
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
+      - institution: The Chinese University of Hong Kong
+        location: Hong Kong
+        url: https://www.cuhk.edu.hk/
+        area: Mathematics
+        studyType: Ph.D.
+        start_date: 2023
+        end_date: 2027 (expected)
         score: ""
-        courses: "Theory of Relativity"
+        courses: ""
         highlights:
-          - Description 1.
-          - Description 2.
+          - CUHK Vice-Chancellor's Ph.D. Scholarship (2023)
+          - Madam Wong Siew Khoon Scholarship (2024)
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Jilin University
+        location: Changchun, China
+        url: https://math.jlu.edu.cn/
+        area: Mathematics
+        studyType: B.Sc.
+        start_date: 2019
+        end_date: 2023
         highlights:
-          - Description 1.
-          - Description 2.
+          - National Scholarship (2020, 2021, 2022)
+          - Samsung Scholarship (2022)
+          - Hongqi Scholarship (2022)
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+      - company: The Chinese University of Hong Kong
+        position: Teaching Assistant
+        location: Hong Kong
+        start_date: 2023
+        end_date: present
+        summary: Teaching assistant for multiple undergraduate and postgraduate courses.
         highlights:
-          - Relativity
-          - Description 2.
-
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
-
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
-
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+          - MATH 1510G Calculus for Engineers (2023 Fall)
+          - MATH 3270B Ordinary Differential Equations (2024 Summer)
+          - MATH 3230A Numerical Analysis (2024 Fall)
+          - MATH 3340 Mathematics of Machine Learning (2025 Spring, 2026 Spring, 2027 Spring)
+          - MAAT 5391 Mathematical Theories of Machine Learning (2025 Fall)
+          - MAAT 5392 Mathematical Principles of Artificial Intelligence (2027 Spring)
 
     Awards:
-      - title: Nobel Prize in Physics
+      - title: National Scholarship
         authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+          - "Ministry of Education, China"
+        date: 2020
+        awarder: Ministry of Education, China
+        summary: Awarded for outstanding academic performance (2020, 2021, 2022).
 
-      - title: Max Planck Medal
+      - title: Samsung Scholarship
         authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
+          - "Samsung (China) Investment Corporation"
+        date: 2022
+        awarder: Samsung (China) Investment Corporation
+        summary: Merit-based scholarship.
+
+      - title: Hongqi Scholarship
+        authors:
+          - "China FAW Group Corporation"
+        date: 2022
+        awarder: China FAW Group Corporation
+        summary: Merit-based scholarship.
+
+      - title: CUHK Vice-Chancellor's Ph.D. Scholarship
+        authors:
+          - "The Chinese University of Hong Kong"
+        date: 2023
+        awarder: The Chinese University of Hong Kong
+        summary: Prestigious scholarship for outstanding Ph.D. students at CUHK.
+
+      - title: Madam Wong Siew Khoon Scholarship
+        authors:
+          - "The Chinese University of Hong Kong"
+        date: 2024
+        awarder: The Chinese University of Hong Kong
+        summary: Scholarship for outstanding graduate students.
+
+      - title: CAST Youth Talent Cultivation Project – PhD Special Program
+        authors:
+          - "China Association for Science and Technology"
+        date: 2026
+        awarder: China Association for Science and Technology
+        summary: Recognition for outstanding young researchers.
+
+    Grants:
+      - title: National Natural Science Foundation of China, Project 125B2022
+        authors:
+          - "PI"
+        date: 2026
+        awarder: National Natural Science Foundation of China
+        summary: Research grant of ¥300,000 as Principal Investigator.
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: Solving elliptic problems with singular sources using singularity splitting deep Ritz method
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - Tianhao Hu
+          - Bangti Jin
+          - Zhi Zhou
+        publisher: SIAM Journal on Scientific Computing, 45, A2043-A2074
+        releaseDate: 2023
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: Solving Poisson problems in polygonal domains with singularity enriched physics informed neural networks
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+          - Tianhao Hu
+          - Bangti Jin
+          - Zhi Zhou
+        publisher: SIAM Journal on Scientific Computing, 46, C369-C398
+        releaseDate: 2024
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
+      - title: An iterative deep Ritz method for monotone elliptic problems
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+          - Tianhao Hu
+          - Bangti Jin
+          - Fan Wang
+        publisher: Journal of Computational Physics, 527, 113791
+        releaseDate: 2025
+
+      - title: Point source identification using singularity enriched neural networks
+        authors:
+          - Tianhao Hu
+          - Bangti Jin
+          - Zhi Zhou
+        publisher: IMA Journal of Numerical Analysis (draft129)
+        releaseDate: 2026
+
+      - title: Conditional Stability and Numerical Reconstruction of a Parabolic Inverse Source Problem Using Carleman Estimates
+        authors:
+          - Tianhao Hu
+          - Xinyu Huang
+          - Bangti Jin
+          - Qian Quan
+          - Zhi Zhou
+        publisher: Inverse Problems (minor revision)
+        releaseDate: 2026
+
+      - title: Stability of Electrical Impedance Tomography with Anisotropies and its Application to the Deep Calderón Method
+        authors:
+          - Tianhao Hu
+          - Bangti Jin
+          - Yixuan Wang
+        publisher: SIAM Journal on Imaging Sciences (in press)
+        releaseDate: 2026
+
+      - title: Dual variational neural network for the p-Laplace problem
+        authors:
+          - Tianhao Hu
+          - Guocheng Li
+          - Fan Wang
+          - Yiming Xu
+          - Zhi Zhou
+        publisher: arXiv:2605.28291 (submitted to Journal of Computational Physics)
+        releaseDate: 2026
+
+      - title: A Convolutional Deep Calderón Method for Electrical Impedance Tomography
+        authors:
+          - Tianhao Hu
+          - Bangti Jin
+          - Yixuan Wang
+        publisher: Submitted to SIAM Journal on Scientific Computing
+        releaseDate: 2026
+
+      - title: A Hybrid Iterative Deep Ritz Method for Elliptic Interface Problems
+        authors:
+          - Tianhao Hu
+          - Bangti Jin
+          - Fan Wang
+          - Yiming Xu
+        publisher: Submitted to Journal of Computational Physics
+        releaseDate: 2026
+
+    Conferences:
+      - title: The Second Hong Kong SIAM Biennial Conference
+        location: Hong Kong
+        date: 2023-08-28
+        summary: Invited Speaker. Talk: "Solving Elliptic Problems with Singular Solutions Using Splitting Technique"
+
+      - title: SIAM Conference on Computational Science and Engineering (CSE 2025)
+        location: Fort Worth, Texas, U.S.
+        date: 2025-03-03
+        summary: Invited Speaker. Talk: "Identifying Point Sources in Elliptic Problems using Deep Neural Networks"
+
+      - title: The 14th Annual Conference on Inverse Problems, Imaging, and Applications
+        location: Tianjin, China
+        date: 2025-04-18
+        summary: Invited Speaker. Talk: "Point Source Identification using Singularity Enriched Neural Networks"
+
+      - title: The 15th AIMS Conference
+        location: Athens, Greece
+        date: 2026-07-06
+        summary: Invited Speaker. Talk: "Dual variational neural network for the p-Laplace problem"
+
+    Research Visits:
+      - company: Center for Computational Mathematics, Flatiron Institute
+        position: Visiting Researcher
+        location: New York, U.S.
+        start_date: 2026-10
+        end_date: 2026-12
+        summary: "Host: Prof. Jiequn Han"
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Research
+        level: Advanced
+        icon: fa-solid fa-flask
+        keywords: "Numerical PDE, Machine Learning, Inverse Problems, Scientific Computing, Deep Learning, Neural Networks"
 
     Languages:
-      - name: German
+      - name: Chinese
         summary: "Native speaker"
 
       - name: English
         summary: "Fluent"
 
     Interests:
-      - name: Physics
+      - name: Research Areas
         icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+        keywords: "Numerical PDE, Machine Learning, Inverse Problems, Scientific Computing"

@@ -1,9 +1,23 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+"SIAM Journal on Scientific Computing":
+  url: https://epubs.siam.org/journal/sjoce3
+  color: "#1a73e8"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"SIAM Journal on Imaging Sciences":
+  url: https://epubs.siam.org/journal/sjbiag
+  color: "#1a73e8"
 
-"Vision":
-  color: "#009f36"
+"Journal of Computational Physics":
+  url: https://www.sciencedirect.com/journal/journal-of-computational-physics
+  color: "#ff6c00"
+
+"IMA Journal of Numerical Analysis":
+  url: https://academic.oup.com/imajna
+  color: "#003366"
+
+"Inverse Problems":
+  url: https://iopscience.iop.org/journal/0266-5611
+  color: "#1b5e20"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#b31b1b"

@@ -2,14 +2,20 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Course materials, schedules, and resources for classes taught.
+description: Teaching experience at The Chinese University of Hong Kong.
 nav: true
 nav_order: 6
-calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. You can organize your courses by years, terms, or topics.
+## Teaching Experience
 
-{% include calendar.liquid calendar_id='test@gmail.com' timezone='Asia/Shanghai' %}
+I have served as a Teaching Assistant for the following courses at The Chinese University of Hong Kong:
 
-{% include courses.liquid %}
+| Course | Semester |
+| --- | --- |
+| MATH 1510G – Calculus for Engineers | 2023 Fall |
+| MATH 3270B – Ordinary Differential Equations | 2024 Summer |
+| MATH 3230A – Numerical Analysis | 2024 Fall |
+| MATH 3340 – Mathematics of Machine Learning | 2025 Spring, 2026 Spring, 2027 Spring |
+| MAAT 5391 – Mathematical Theories of Machine Learning | 2025 Fall |
+| MAAT 5392 – Mathematical Principles of Artificial Intelligence | 2027 Spring |
