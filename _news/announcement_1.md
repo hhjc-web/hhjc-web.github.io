@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Selected as CAST Youth Talent Cultivation Project (PhD Special Program)
-date: 2026-01-01
+title: Visiting Flatiron Institute
+date: 2026-10-01
 inline: false
 related_posts: false
 ---
 
-Tianhao Hu has been selected for the **CAST Youth Talent Cultivation Project – PhD Special Program** by the China Association for Science and Technology (CAST), recognizing outstanding young researchers in science and technology.
+I will be visiting the [Center for Computational Mathematics](https://www.flatironinstitute.org/divisions/computational-mathematics) at [Flatiron Institute](https://www.flatironinstitute.org/) in New York, hosted by Prof. Jiequn Han (Oct–Dec 2026).

@@ -1,10 +1,9 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
-description: Teaching experience at The Chinese University of Hong Kong.
+title: Teaching
 nav: true
-nav_order: 6
+nav_order: 7
 ---
 
 ## Teaching Experience

@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Ph.D. Student, Department of Mathematics, The Chinese University of Hong Kong
 
@@ -9,9 +9,6 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Room 222A, Lady Shaw Building</p>
-    <p>The Chinese University of Hong Kong</p>
-    <p>Shatin, New Territories, Hong Kong</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -33,4 +30,6 @@ I am a Ph.D. student in the [Department of Mathematics](https://www.math.cuhk.ed
 - Inverse Problems
 - Scientific Computing
 
-I am currently supervised by Prof. Bangti Jin and Prof. Zhi Zhou. Previously, I received my B.Sc. from the School of Mathematics at [Jilin University](https://math.jlu.edu.cn/) in 2023.
+**Address:** Room 222A, Lady Shaw Building, The Chinese University of Hong Kong, Shatin, New Territories, Hong Kong
+
+**Email:** thhu (at) link (dot) cuhk (dot) edu (dot) hk
