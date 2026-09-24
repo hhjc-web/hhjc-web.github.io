@@ -1,2 +1,3 @@
-# Force LF line endings, needed for Docker to work on Windows
+# Force LF line endings for all text files - needed for Prettier and Docker on Windows
+* text=auto eol=lf
 *.sh text eol=lf
