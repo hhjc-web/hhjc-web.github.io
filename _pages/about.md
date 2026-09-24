@@ -33,4 +33,4 @@ I am a Ph.D. student in the [Department of Mathematics](https://www.math.cuhk.ed
 - Inverse Problems
 - Scientific Computing
 
-I am currently supervised by [Prof. Bangti Jin](https://people.ucas.edu.cn/~jbt) and [Prof. Zhi Zhou](https://scholar.google.com/citations?user=). Previously, I received my B.Sc. from the School of Mathematics at [Jilin University](https://math.jlu.edu.cn/) in 2023.
+I am currently supervised by Prof. Bangti Jin and Prof. Zhi Zhou. Previously, I received my B.Sc. from the School of Mathematics at [Jilin University](https://math.jlu.edu.cn/) in 2023.
