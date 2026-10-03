@@ -58,8 +58,8 @@ cv:
           - MATH 3270B Ordinary Differential Equations (2024 Summer)
           - MATH 3230A Numerical Analysis (2024 Fall)
           - MATH 3340 Mathematics of Machine Learning (2025 Spring, 2026 Spring, 2027 Spring)
-          - MAAT 5391 Mathematical Theories of Machine Learning (2025 Fall)
-          - MAAT 5392 Mathematical Principles of Artificial Intelligence (2027 Spring)
+          - MMAT 5391 Mathematical Theories of Machine Learning (2025 Fall)
+          - MMAT 5392 Mathematical Principles of Artificial Intelligence (2027 Spring)
 
     Awards:
       - title: National Scholarship
@@ -170,7 +170,7 @@ cv:
           - Fan Wang
           - Yiming Xu
           - Zhi Zhou
-        publisher: arXiv:2605.28291 (submitted to Journal of Computational Physics)
+        publisher: "arXiv:2605.28291 (submitted to ESAIM: Mathematical Modelling and Numerical Analysis)"
         releaseDate: 2026
 
       - title: A Convolutional Deep Calderón Method for Electrical Impedance Tomography
@@ -178,7 +178,7 @@ cv:
           - Tianhao Hu
           - Bangti Jin
           - Yixuan Wang
-        publisher: Submitted to SIAM Journal on Scientific Computing
+        publisher: Submitted to Proceedings of the Royal Society A
         releaseDate: 2026
 
       - title: A Hybrid Iterative Deep Ritz Method for Elliptic Interface Problems
@@ -187,7 +187,7 @@ cv:
           - Bangti Jin
           - Fan Wang
           - Yiming Xu
-        publisher: Submitted to Journal of Computational Physics
+        publisher: arXiv:2609.27325 (submitted to Computers and Mathematics with Applications)
         releaseDate: 2026
 
     Conferences:
