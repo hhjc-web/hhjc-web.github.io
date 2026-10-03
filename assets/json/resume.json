@@ -121,28 +121,28 @@
   "publications": [
     {
       "name": "Solving elliptic problems with singular sources using singularity splitting deep Ritz method",
-      "publisher": "SIAM Journal on Scientific Computing",
+      "publisher": "SIAM J. Sci. Comput.",
       "releaseDate": "2023",
       "url": "",
       "summary": "T. Hu, B. Jin, and Z. Zhou. SISC, 45, A2043-A2074."
     },
     {
       "name": "Solving Poisson problems in polygonal domains with singularity enriched physics informed neural networks",
-      "publisher": "SIAM Journal on Scientific Computing",
+      "publisher": "SIAM J. Sci. Comput.",
       "releaseDate": "2024",
       "url": "",
       "summary": "T. Hu, B. Jin, and Z. Zhou. SISC, 46, C369-C398."
     },
     {
       "name": "An iterative deep Ritz method for monotone elliptic problems",
-      "publisher": "Journal of Computational Physics",
+      "publisher": "J. Comput. Phys.",
       "releaseDate": "2025",
       "url": "",
       "summary": "T. Hu, B. Jin, and F. Wang. JCP, 527, 113791."
     },
     {
       "name": "Point source identification using singularity enriched neural networks",
-      "publisher": "IMA Journal of Numerical Analysis",
+      "publisher": "IMA J. Numer. Anal.",
       "releaseDate": "2026",
       "url": "",
       "summary": "T. Hu, B. Jin, and Z. Zhou. IMA JNA, draft129."
@@ -156,7 +156,7 @@
     },
     {
       "name": "Stability of Electrical Impedance Tomography with Anisotropies and its Application to the Deep Calderón Method",
-      "publisher": "SIAM Journal on Imaging Sciences",
+      "publisher": "SIAM J. Imaging Sci.",
       "releaseDate": "2026",
       "url": "",
       "summary": "T. Hu, B. Jin, and Y. Wang. SIIMS, in press."
@@ -166,18 +166,18 @@
       "publisher": "arXiv:2605.28291",
       "releaseDate": "2026",
       "url": "https://arxiv.org/abs/2605.28291",
-      "summary": "T. Hu, G. Li, F. Wang, Y. Xu, and Z. Zhou. Submitted to Journal of Computational Physics."
+      "summary": "T. Hu, G. Li, F. Wang, Y. Xu, and Z. Zhou. Submitted to ESAIM: M2AN."
     },
     {
       "name": "A Convolutional Deep Calderón Method for Electrical Impedance Tomography",
-      "publisher": "Submitted to SIAM Journal on Scientific Computing",
+      "publisher": "Submitted to Proc. R. Soc. A",
       "releaseDate": "2026",
       "url": "",
       "summary": "T. Hu, B. Jin, and Y. Wang."
     },
     {
       "name": "A Hybrid Iterative Deep Ritz Method for Elliptic Interface Problems",
-      "publisher": "Submitted to Journal of Computational Physics",
+      "publisher": "Submitted to Comput. Math. Appl.",
       "releaseDate": "2026",
       "url": "",
       "summary": "T. Hu, B. Jin, F. Wang and Y. Xu."

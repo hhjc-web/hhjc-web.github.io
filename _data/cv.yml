@@ -118,7 +118,7 @@ cv:
           - Tianhao Hu
           - Bangti Jin
           - Zhi Zhou
-        publisher: SIAM Journal on Scientific Computing, 45, A2043-A2074
+        publisher: SIAM J. Sci. Comput., 45, A2043-A2074
         releaseDate: 2023
 
       - title: Solving Poisson problems in polygonal domains with singularity enriched physics informed neural networks
@@ -126,7 +126,7 @@ cv:
           - Tianhao Hu
           - Bangti Jin
           - Zhi Zhou
-        publisher: SIAM Journal on Scientific Computing, 46, C369-C398
+        publisher: SIAM J. Sci. Comput., 46, C369-C398
         releaseDate: 2024
 
       - title: An iterative deep Ritz method for monotone elliptic problems
@@ -134,7 +134,7 @@ cv:
           - Tianhao Hu
           - Bangti Jin
           - Fan Wang
-        publisher: Journal of Computational Physics, 527, 113791
+        publisher: J. Comput. Phys., 527, 113791
         releaseDate: 2025
 
       - title: Point source identification using singularity enriched neural networks
@@ -142,7 +142,7 @@ cv:
           - Tianhao Hu
           - Bangti Jin
           - Zhi Zhou
-        publisher: IMA Journal of Numerical Analysis (draft129)
+        publisher: IMA J. Numer. Anal. (draft129)
         releaseDate: 2026
 
       - title: Conditional Stability and Numerical Reconstruction of a Parabolic Inverse Source Problem Using Carleman Estimates
@@ -160,7 +160,7 @@ cv:
           - Tianhao Hu
           - Bangti Jin
           - Yixuan Wang
-        publisher: SIAM Journal on Imaging Sciences (in press)
+        publisher: SIAM J. Imaging Sci. (in press)
         releaseDate: 2026
 
       - title: Dual variational neural network for the p-Laplace problem
@@ -170,7 +170,7 @@ cv:
           - Fan Wang
           - Yiming Xu
           - Zhi Zhou
-        publisher: "arXiv:2605.28291 (submitted to ESAIM: Mathematical Modelling and Numerical Analysis)"
+        publisher: "arXiv:2605.28291 (submitted to ESAIM: M2AN)"
         releaseDate: 2026
 
       - title: A Convolutional Deep Calderón Method for Electrical Impedance Tomography
@@ -178,7 +178,7 @@ cv:
           - Tianhao Hu
           - Bangti Jin
           - Yixuan Wang
-        publisher: Submitted to Proceedings of the Royal Society A
+        publisher: Submitted to Proc. R. Soc. A
         releaseDate: 2026
 
       - title: A Hybrid Iterative Deep Ritz Method for Elliptic Interface Problems
@@ -187,7 +187,7 @@ cv:
           - Bangti Jin
           - Fan Wang
           - Yiming Xu
-        publisher: arXiv:2609.27325 (submitted to Computers and Mathematics with Applications)
+        publisher: arXiv:2609.27325 (submitted to Comput. Math. Appl.)
         releaseDate: 2026
 
     Conferences:
