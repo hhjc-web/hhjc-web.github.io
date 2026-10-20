@@ -199,11 +199,11 @@
     <div class="periodical">
       {{ periodical | strip }}
       {%- if entry.volume -%}
-        <span class="pub-meta">{% if entrytype_text != "" %}&nbsp;·&nbsp;{% endif %}Vol.&nbsp;{{ entry.volume }}{%- if entry.pages -%}, pp.&nbsp;{{ entry.pages | replace: "--", "–" }}{%- endif -%}</span>
+        <span class="pub-meta">&nbsp;·&nbsp;Vol.&nbsp;{{ entry.volume }}{%- if entry.pages -%}, pp.&nbsp;{{ entry.pages | replace: "--", "–" }}{%- endif -%}</span>
       {%- endif -%}
-    </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
+      {%- if entry.note -%}
+        <span class="pub-note">&nbsp;·&nbsp;{{ entry.note | strip }}</span>
+      {%- endif -%}
     </div>
 
     <!-- Links/Buttons -->
