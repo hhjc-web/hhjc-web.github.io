@@ -30,6 +30,8 @@
         font-weight: 700 !important;
       }
       .navbar .navbar-brand,
+      .navbar .navbar-brand span,
+      .navbar .navbar-brand .font-weight-bold,
       .navbar .nav-link,
       .navbar #search-toggle,
       .navbar #search-toggle .nav-link,
@@ -51,6 +53,7 @@
       }
       .navbar .nav-link:hover,
       .navbar .navbar-brand:hover,
+      .navbar .navbar-brand:hover span,
       .navbar #light-toggle:hover,
       .navbar #search-toggle:hover,
       .navbar #light-toggle:hover .fa-half-sun-moon::before,
@@ -174,9 +177,9 @@
       .publications .periodical {
         color: var(--global-text-color-light);
       }
-      .publications .periodical .pub-meta {
-        color: var(--global-theme-color);
-        font-weight: 600;
+      .publications .periodical .pub-meta,
+      .publications .periodical .pub-note {
+        color: inherit;
       }
       .publications .links a.btn {
         color: var(--global-theme-color) !important;
@@ -193,8 +196,9 @@
         color: #ffffff !important;
       }
 
-      /* Homepage selected publications: hide volume + Bib toggle */
+      /* Homepage selected publications: hide volume + note (e.g. In press) + Bib toggle */
       .home-section .pub-meta,
+      .home-section .pub-note,
       .home-section .links a.bibtex {
         display: none !important;
       }
