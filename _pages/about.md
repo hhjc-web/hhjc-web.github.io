@@ -34,26 +34,3 @@ I am a Ph.D. student in the [Department of Mathematics](https://www.math.cuhk.ed
 
 **Email:** thhu (at) link (dot) cuhk (dot) edu (dot) hk
 
-<style>
-  /* Purple, full-width intro band */
-  body {
-    overflow-x: hidden;
-  }
-  .post-header {
-    background-color: #6f42c1;
-    color: #ffffff;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    padding: 1.5rem 1rem;
-    text-align: center;
-  }
-  .post-header .post-title,
-  .post-header .desc {
-    color: #ffffff;
-  }
-
-  /* Smaller profile photo */
-  .profile img {
-    max-width: 200px;
-  }
-</style>
