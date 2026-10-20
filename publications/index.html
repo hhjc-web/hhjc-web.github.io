@@ -5,50 +5,89 @@
 </style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%E2%9A%9B%EF%B8%8F&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://hhjc-web.github.io/publications/"> <script src="/assets/js/theme.js?v=5286c3e4c334d0ecb8fc0c40ff4fa7ec"></script> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-native.css?v=5847e5ed4a4568527aa6cfab446049ca" media="none" id="highlight_theme_dark"> <script>
     initTheme();
   </script> <style>
-      /* ---- Tech-style navbar ---- */
+      /* ================= Theme palette (unify to violet) ================= */
+      :root {
+        --global-theme-color: #6d28d9;
+        --global-hover-color: #7c3aed;
+      }
+      html[data-theme="dark"] {
+        --global-theme-color: #a78bfa;
+        --global-hover-color: #c4b5fd;
+      }
+
+      /* ================= Navbar ================= */
       .navbar {
-        background: linear-gradient(120deg, #1e1b4b 0%, #4c1d95 55%, #6d28d9 100%) !important;
+        background: linear-gradient(120deg, #1e1b4b 0%, #4c1d95 55%, #7c3aed 100%) !important;
         opacity: 1 !important;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
-        box-shadow: 0 4px 24px rgba(76, 29, 149, 0.32);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+        box-shadow: 0 6px 24px rgba(30, 27, 75, 0.35);
+      }
+      .navbar .navbar-brand.title {
+        font-weight: 700 !important;
+        letter-spacing: 0.01em;
+      }
+      .navbar .navbar-brand.title .font-weight-bold {
+        font-weight: 700 !important;
       }
       .navbar .navbar-brand,
-      .navbar .navbar-brand .font-weight-bold,
       .navbar .nav-link,
+      .navbar #search-toggle,
       .navbar #search-toggle .nav-link,
       .navbar #search-toggle i,
-      .navbar #light-toggle {
+      .navbar #light-toggle,
+      .navbar #light-toggle i,
+      .navbar #light-toggle .fa-half-sun-moon::before,
+      .navbar #light-toggle .fa-half-sun-moon::after {
         color: #ffffff !important;
+      }
+      .navbar .navbar-nav .nav-item .nav-link {
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        border-radius: 8px;
+        padding: 0.35rem 0.7rem !important;
+        transition:
+          background-color 0.18s ease,
+          color 0.18s ease;
       }
       .navbar .nav-link:hover,
       .navbar .navbar-brand:hover,
       .navbar #light-toggle:hover,
       .navbar #search-toggle:hover,
-      .navbar .nav-item.active > .nav-link,
-      .navbar .nav-item.active > .nav-link:hover {
-        color: #e9d5ff !important;
+      .navbar #light-toggle:hover .fa-half-sun-moon::before,
+      .navbar #light-toggle:hover .fa-half-sun-moon::after {
+        color: #ede9fe !important;
+      }
+      .navbar .navbar-nav .nav-item .nav-link:hover {
+        background-color: rgba(255, 255, 255, 0.12);
       }
       .navbar .nav-item.active > .nav-link {
-        border-bottom: 2px solid #a78bfa;
-        padding-bottom: 2px;
+        color: #ffffff !important;
+        background-color: rgba(255, 255, 255, 0.16) !important;
+        font-weight: 700;
       }
       .navbar .navbar-toggler .icon-bar {
         background-color: #ffffff !important;
       }
 
-      /* ---- Unified name color (no more white + black mix) ---- */
+      /* ================= Name: consistent weight (no bold + thin mix) ================= */
       .post-title,
       .post-title .font-weight-bold {
         color: var(--global-text-color) !important;
+        font-weight: 800 !important;
       }
 
-      /* ---- Smaller profile photo ---- */
+      /* ================= Profile photo ================= */
       .profile img,
       .profile figure {
         max-width: 200px;
       }
+      @media (min-width: 576px) {
+        .profile {
+          width: auto;
+        }
+      }
 
-      /* ---- Tech-style section headings ---- */
+      /* ================= Tech section headings ================= */
       .section-title {
         font-family: ui-monospace, "JetBrains Mono", "SFMono-Regular", Menlo, Consolas, monospace;
         text-transform: uppercase;
@@ -66,7 +105,7 @@
         text-decoration: none;
       }
 
-      /* ---- Home sections with breathing room ---- */
+      /* ================= Home sections with breathing room ================= */
       .home-section {
         margin: 2.6rem 0 3rem;
       }
@@ -77,7 +116,7 @@
         padding: 1.6rem 1.6rem 0.4rem;
       }
 
-      /* ---- Gradient divider with glowing diamond in the middle ---- */
+      /* ================= Gradient divider with glowing diamond ================= */
       .section-divider {
         height: 1px;
         width: 70%;
@@ -97,47 +136,110 @@
         box-shadow: 0 0 10px rgba(124, 58, 237, 0.6);
       }
 
-      /* ---- Dark-mode navbar variant ---- */
+      /* ================= Publications page polish ================= */
+      .publications h2.bibliography {
+        color: var(--global-theme-color) !important;
+        border-top: none !important;
+        border-bottom: 2px solid var(--global-theme-color);
+        border-left: 4px solid var(--global-theme-color);
+        text-align: left !important;
+        font-family: ui-monospace, "JetBrains Mono", Menlo, Consolas, monospace;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 1.1rem;
+        font-weight: 700;
+        padding: 0 0 0.4rem 0.75rem;
+        margin: 2.4rem 0 1.4rem !important;
+      }
+      .publications .row {
+        padding: 0.9rem 1rem;
+        margin-bottom: 0.6rem;
+        border-radius: 12px;
+        border: 1px solid transparent;
+        transition:
+          background-color 0.18s ease,
+          border-color 0.18s ease,
+          transform 0.18s ease;
+      }
+      .publications .row:hover {
+        background: linear-gradient(180deg, rgba(124, 58, 237, 0.06), rgba(124, 58, 237, 0.02));
+        border-color: rgba(124, 58, 237, 0.16);
+        transform: translateY(-2px);
+      }
+      .publications .title {
+        font-weight: 600;
+        color: var(--global-text-color);
+      }
+      .publications .author,
+      .publications .periodical {
+        color: var(--global-text-color-light);
+      }
+      .publications .periodical .pub-meta {
+        color: var(--global-theme-color);
+        font-weight: 600;
+      }
+      .publications .links a.btn {
+        color: var(--global-theme-color) !important;
+        border: 1px solid var(--global-theme-color) !important;
+        border-radius: 8px !important;
+        font-size: 0.8rem;
+        letter-spacing: 0.03em;
+        transition:
+          background-color 0.15s ease,
+          color 0.15s ease;
+      }
+      .publications .links a.btn:hover {
+        background-color: var(--global-theme-color) !important;
+        color: #ffffff !important;
+      }
+
+      /* Homepage selected publications: hide volume + Bib toggle */
+      .home-section .pub-meta,
+      .home-section .links a.bibtex {
+        display: none !important;
+      }
+
+      /* ================= Dark-mode navbar variant ================= */
       html[data-theme="dark"] .navbar {
         background: linear-gradient(120deg, #0b0716 0%, #1e1b4b 55%, #4c1d95 100%) !important;
       }
-    </style> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Tianhao</span> Hu </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item active"> <a class="nav-link" href="/publications/">Publications <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/grants/">Grants </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">Repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/conferences/">Conferences </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Publications</h1> <p class="post-description"></p> </header> <article> <script src="/assets/js/bibsearch.js?v=1bc438ca9037884cc579601c09afd847" type="module"></script> <p><input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter"></p> <div class="publications"> <h2 class="bibliography">2026</h2> <ol class="bibliography"> <li> <div class="row"> <div id="hu2026point" class="col-sm-10"> <div class="title">Point source identification using singularity enriched neural networks</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Zhi Zhou </div> <div class="periodical"> <em>IMA J. Numer. Anal.</em>, 2026 </div> <div class="periodical"> draft129 </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026point</span><span class="p">,</span>
+    </style> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> <span class="font-weight-bold">Tianhao</span> Hu </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">About </a> </li> <li class="nav-item active"> <a class="nav-link" href="/publications/">Publications <span class="sr-only">(current)</span> </a> </li> <li class="nav-item "> <a class="nav-link" href="/grants/">Grants </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">Repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/cv/">CV </a> </li> <li class="nav-item "> <a class="nav-link" href="/conferences/">Conferences </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">Teaching </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> <li class="toggle-container"> <button id="light-toggle" type="button" title="Change theme" aria-label="Change color theme"> <i class="fa-half-sun-moon" id="light-toggle-system"></i> <i class="fa-solid fa-moon" id="light-toggle-dark"></i> <i class="fa-solid fa-sun" id="light-toggle-light"></i> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">Publications</h1> <p class="post-description"></p> </header> <article> <script src="/assets/js/bibsearch.js?v=1bc438ca9037884cc579601c09afd847" type="module"></script> <p><input type="text" id="bibsearch" spellcheck="false" autocomplete="off" class="search bibsearch-form-input" placeholder="Type to filter"></p> <div class="publications"> <h2 class="bibliography">2026</h2> <ol class="bibliography"> <li> <div class="row"> <div id="hu2026point" class="col-sm-10"> <div class="title">Point source identification using singularity enriched neural networks</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Zhi Zhou </div> <div class="periodical"> <em>IMA J. Numer. Anal.</em>, 2026</div> <div class="periodical"> draft129 </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026point</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Point source identification using singularity enriched neural networks}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Tianhao and Jin, Bangti and Zhou, Zhi}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{IMA J. Numer. Anal.}</span><span class="p">,</span>
   <span class="na">note</span> <span class="p">=</span> <span class="s">{draft129}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="hu2026conditional" class="col-sm-10"> <div class="title">Conditional Stability and Numerical Reconstruction of a Parabolic Inverse Source Problem Using Carleman Estimates</div> <div class="author"> <em>Tianhao Hu</em>, Xinchi Huang, Bangti Jin, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '2 more authors' ? 'Qimeng Quan, Zhi Zhou' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>Inverse Problems</em>, 2026 </div> <div class="periodical"> In press </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026conditional</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="hu2026conditional" class="col-sm-10"> <div class="title">Conditional Stability and Numerical Reconstruction of a Parabolic Inverse Source Problem Using Carleman Estimates</div> <div class="author"> <em>Tianhao Hu</em>, Xinchi Huang, Bangti Jin, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '2 more authors' ? 'Qimeng Quan, Zhi Zhou' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>Inverse Problems</em>, 2026</div> <div class="periodical"> In press </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026conditional</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Conditional Stability and Numerical Reconstruction of a Parabolic Inverse Source Problem Using {C}arleman Estimates}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Tianhao and Huang, Xinchi and Jin, Bangti and Quan, Qimeng and Zhou, Zhi}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Inverse Problems}</span><span class="p">,</span>
   <span class="na">note</span> <span class="p">=</span> <span class="s">{In press}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span>
-<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="hu2026stability" class="col-sm-10"> <div class="title">Stability of Electrical Impedance Tomography with Anisotropies and its Application to the Deep Calderón Method</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Yiran Wang </div> <div class="periodical"> <em>SIAM J. Imaging Sci.</em>, 2026 </div> <div class="periodical"> In press </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026stability</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="hu2026stability" class="col-sm-10"> <div class="title">Stability of Electrical Impedance Tomography with Anisotropies and its Application to the Deep Calderón Method</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Yiran Wang </div> <div class="periodical"> <em>SIAM J. Imaging Sci.</em>, 2026</div> <div class="periodical"> In press </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026stability</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Stability of Electrical Impedance Tomography with Anisotropies and its Application to the Deep {Calder\'{o}n} Method}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Tianhao and Jin, Bangti and Wang, Yiran}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{SIAM J. Imaging Sci.}</span><span class="p">,</span>
   <span class="na">note</span> <span class="p">=</span> <span class="s">{In press}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
   <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Society for Industrial and Applied Mathematics}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="hu2026dual" class="col-sm-10"> <div class="title">Dual variational neural network for the p-Laplace problem</div> <div class="author"> <em>Tianhao Hu</em>, Guanglian Li, Fengru Wang, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '2 more authors' ? 'Yifeng Xu, Zhi Zhou' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>arXiv:2605.28291</em>, 2026 </div> <div class="periodical"> Submitted to ESAIM: M2AN </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026dual</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="hu2026dual" class="col-sm-10"> <div class="title">Dual variational neural network for the p-Laplace problem</div> <div class="author"> <em>Tianhao Hu</em>, Guanglian Li, Fengru Wang, and <span class="more-authors" title="click to view 2 more authors" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '2 more authors' ? 'Yifeng Xu, Zhi Zhou' : '2 more authors'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">2 more authors</span> </div> <div class="periodical"> <em>arXiv:2605.28291</em>, 2026</div> <div class="periodical"> Submitted to ESAIM: M2AN </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026dual</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Dual variational neural network for the $p$-{L}aplace problem}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Tianhao and Li, Guanglian and Wang, Fengru and Xu, Yifeng and Zhou, Zhi}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv:2605.28291}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
   <span class="na">note</span> <span class="p">=</span> <span class="s">{Submitted to ESAIM: M2AN}</span>
-<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="hu2026convolutional" class="col-sm-10"> <div class="title">A Convolutional Deep Calderón Method for Electrical Impedance Tomography</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Yiran Wang </div> <div class="periodical"> <em>Submitted to Proc. R. Soc. A</em>, 2026 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026convolutional</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="hu2026convolutional" class="col-sm-10"> <div class="title">A Convolutional Deep Calderón Method for Electrical Impedance Tomography</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Yiran Wang </div> <div class="periodical"> <em>Submitted to Proc. R. Soc. A</em>, 2026</div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026convolutional</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{A Convolutional Deep {Calder\'{o}n} Method for Electrical Impedance Tomography}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Tianhao and Jin, Bangti and Wang, Yiran}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{Submitted to Proc. R. Soc. A}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span>
-<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="hu2026hybrid" class="col-sm-10"> <div class="title">A Hybrid Iterative Deep Ritz Method for Elliptic Interface Problems</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, Fengru Wang, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '1 more author' ? 'Yifeng Xu' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>arXiv:2609.27325</em>, 2026 </div> <div class="periodical"> Submitted to Comput. Math. Appl. </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026hybrid</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> <li> <div class="row"> <div id="hu2026hybrid" class="col-sm-10"> <div class="title">A Hybrid Iterative Deep Ritz Method for Elliptic Interface Problems</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, Fengru Wang, and <span class="more-authors" title="click to view 1 more author" onclick=" var element=this; element.setAttribute('title', ''); var more_authors_text=element.textContent == '1 more author' ? 'Yifeng Xu' : '1 more author'; var cursorPosition=0; var textAdder=setInterval(function(){ element.innerHTML = more_authors_text.substring(0, cursorPosition + 1); if (++cursorPosition == more_authors_text.length){ clearInterval(textAdder); } }, '10'); ">1 more author</span> </div> <div class="periodical"> <em>arXiv:2609.27325</em>, 2026</div> <div class="periodical"> Submitted to Comput. Math. Appl. </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2026hybrid</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{A Hybrid Iterative Deep {R}itz Method for Elliptic Interface Problems}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Tianhao and Jin, Bangti and Wang, Fengru and Xu, Yifeng}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{arXiv:2609.27325}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2026}</span><span class="p">,</span>
   <span class="na">note</span> <span class="p">=</span> <span class="s">{Submitted to Comput. Math. Appl.}</span>
-<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> <h2 class="bibliography">2025</h2> <ol class="bibliography"><li> <div class="row"> <div id="hu2025iterative" class="col-sm-10"> <div class="title">An iterative deep Ritz method for monotone elliptic problems</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Fengru Wang </div> <div class="periodical"> <em>J. Comput. Phys.</em>, 2025 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2025iterative</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li> </ol> <h2 class="bibliography">2025</h2> <ol class="bibliography"><li> <div class="row"> <div id="hu2025iterative" class="col-sm-10"> <div class="title">An iterative deep Ritz method for monotone elliptic problems</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Fengru Wang </div> <div class="periodical"> <em>J. Comput. Phys.</em>, 2025<span class="pub-meta"> · Vol. 527, pp. 113791</span> </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2025iterative</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{An iterative deep {R}itz method for monotone elliptic problems}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Tianhao and Jin, Bangti and Wang, Fengru}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{J. Comput. Phys.}</span><span class="p">,</span>
@@ -145,7 +247,7 @@
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{113791}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2025}</span><span class="p">,</span>
   <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Elsevier}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure> </div> </div> </div> </li></ol> <h2 class="bibliography">2024</h2> <ol class="bibliography"><li> <div class="row"> <div id="hu2024poisson" class="col-sm-10"> <div class="title">Solving Poisson problems in polygonal domains with singularity enriched physics informed neural networks</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Zhi Zhou </div> <div class="periodical"> <em>SIAM J. Sci. Comput.</em>, 2024 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2024poisson</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li></ol> <h2 class="bibliography">2024</h2> <ol class="bibliography"><li> <div class="row"> <div id="hu2024poisson" class="col-sm-10"> <div class="title">Solving Poisson problems in polygonal domains with singularity enriched physics informed neural networks</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Zhi Zhou </div> <div class="periodical"> <em>SIAM J. Sci. Comput.</em>, 2024<span class="pub-meta"> · Vol. 46, pp. C369–C398</span> </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2024poisson</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Solving {P}oisson problems in polygonal domains with singularity enriched physics informed neural networks}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Tianhao and Jin, Bangti and Zhou, Zhi}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{SIAM J. Sci. Comput.}</span><span class="p">,</span>
@@ -153,7 +255,7 @@
   <span class="na">pages</span> <span class="p">=</span> <span class="s">{C369--C398}</span><span class="p">,</span>
   <span class="na">year</span> <span class="p">=</span> <span class="s">{2024}</span><span class="p">,</span>
   <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Society for Industrial and Applied Mathematics}</span><span class="p">,</span>
-<span class="p">}</span></code></pre></figure> </div> </div> </div> </li></ol> <h2 class="bibliography">2023</h2> <ol class="bibliography"><li> <div class="row"> <div id="hu2023singularity" class="col-sm-10"> <div class="title">Solving elliptic problems with singular sources using singularity splitting deep Ritz method</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Zhi Zhou </div> <div class="periodical"> <em>SIAM J. Sci. Comput.</em>, 2023 </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2023singularity</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure> </div> </div> </div> </li></ol> <h2 class="bibliography">2023</h2> <ol class="bibliography"><li> <div class="row"> <div id="hu2023singularity" class="col-sm-10"> <div class="title">Solving elliptic problems with singular sources using singularity splitting deep Ritz method</div> <div class="author"> <em>Tianhao Hu</em>, Bangti Jin, and Zhi Zhou </div> <div class="periodical"> <em>SIAM J. Sci. Comput.</em>, 2023<span class="pub-meta"> · Vol. 45, pp. A2043–A2074</span> </div> <div class="periodical"> </div> <div class="links"> <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a> </div> <div class="bibtex hidden"> <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">hu2023singularity</span><span class="p">,</span>
   <span class="na">title</span> <span class="p">=</span> <span class="s">{Solving elliptic problems with singular sources using singularity splitting deep {R}itz method}</span><span class="p">,</span>
   <span class="na">author</span> <span class="p">=</span> <span class="s">{Hu, Tianhao and Jin, Bangti and Zhou, Zhi}</span><span class="p">,</span>
   <span class="na">journal</span> <span class="p">=</span> <span class="s">{SIAM J. Sci. Comput.}</span><span class="p">,</span>
